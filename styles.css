@@ -15,7 +15,7 @@ body {
     --gray-800: hsl(0, 0%, 7%);
 }
 
-.container {
+main.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,7 @@ a.button:hover {
 }
 
 a.button,
-a.subTitle,
+h1.subTitle,
 a.authorsName {
     font-weight: 800;
     color: var(--gray-800);
@@ -75,15 +75,19 @@ p.infoText {
     color: var(--gray-500);
 }
 
-a.subTitle {
+h1.subTitle {
     margin-bottom: 15px;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
 
-a.subTitle:hover {
+h1.subTitle a:hover {
     cursor: pointer;
     color: var(--primary-color);
+}
+
+h1.subTitle a {
+    color: inherit;
 }
 
 p.infoText {
@@ -110,6 +114,8 @@ a.authorsName:hover {
     opacity: 0.8;
 }
 
-a {
+a.button,
+h1.subTitle,
+a.authorsName {
     text-decoration: none;
 }
